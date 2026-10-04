@@ -6,6 +6,7 @@ export LD_LIBRARY_PATH="/app/bin:/app${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 cd /app && ./srcds_linux \
     -game nmrih \
     -insecure \
+    -tickrate 64 \
     -port 27015 \
     +exec server.cfg \
     "$@" &

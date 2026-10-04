@@ -1,14 +1,13 @@
-# Left 4 Dead 2 Server
+# No More Room in Hell Server
 
 ## 简述
 
-求生之路 2 插件服务器
+地狱已满 2 插件服务器
 
 **特点：**
 
-- 基于 L4D2 官方专用服务器（Steam app 222860）
+- 基于地狱已满官方专用服务器（Steam app 317670）
 - Metamod: Source + SourceMod 插件平台基架
-- l4dtoolz 突破人数上限与 Steam 限制
 - 镜像不含游戏本体：首次启动自动通过 steamcmd 下载并应用补丁
 
 ## 首次启动与维护
