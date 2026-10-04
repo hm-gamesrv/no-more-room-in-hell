@@ -1,0 +1,44 @@
+{
+    "schemaVersion": 1,
+    "key": "no-more-room-in-hell",
+    "name": "No More Room in Hell",
+    "registries": {
+        "ghcr": "ghcr.io/hm-gamesrv/",
+        "aliyun": "crpi-i9e7zrpnu4792a5m.cn-chengdu.personal.cr.aliyuncs.com/hiromuraki/"
+    },
+    "resources": {
+        "ports": [
+            {
+                "host": "27015",
+                "container": "27015",
+                "proto": "udp",
+                "required": true,
+                "desc": "游戏联机端口"
+            },
+            {
+                "host": "27015",
+                "container": "27015",
+                "proto": "tcp",
+                "desc": "RCON 端口"
+            }
+        ],
+        "volumes": [
+            {
+                "host": "./no-more-room-in-hell-app",
+                "container": "/app",
+                "required": true,
+                "desc": "游戏本体、存档与配置（首次启动自动下载）"
+            }
+        ],
+        "env": [],
+        "extraArgs": ""
+    },
+    "variants": [
+        {
+            "key": "latest",
+            "name": "插件版",
+            "tag": "latest",
+            "container": "no-more-room-in-hell-server"
+        }
+    ]
+}
