@@ -81,4 +81,4 @@ VOLUME ["/app"]
 WORKDIR /app
 USER 1000:1000
 ENTRYPOINT ["bash", "/usr/local/bin/init.sh"]
-CMD ["bash", "/app/start-server.sh", "+map", "nmo_broadwalk"]
+CMD ["bash", "/app/start-server.sh", "+map", "nmo_boardwalk"]
